@@ -6,6 +6,7 @@ Em geral o dataset Breast Cancer foi utilizado somente para verificação das im
 2) Classificação com a técnica de amostragem k-fold cross validation no modelo 3C;
 3) Classificação com a técnica de amostragem hold out no modelo 4C;
 4) Classificação com a técnica de amostragem k-fold cross validation no modelo 4C.
+
 Em todos as simulações utilizou-se como critério de parada do treinamento 60000 épocas ou um erro aceitável de 10-5, estimado com o método Erro Médio Quadrático (EMQ), sob a função de ativação dos neurônios Sigmoid em todas as camadas com pesos iniciados com valores aleatórios entre -0.1 e 0.1 fazendo uso de um limiar de ativação (novo neurônio) de valor 1.0 da camada de entrada até a última camada oculta.
 Para que os modelos fossem capazes de gerar resultados satisfatórios com as combinações de valores dos parâmetros dinâmicos apresentados os datasets tiveram que ser normalizados e/ou balanceados e/ou ter seus registros e/ou features filtrados.
 Para as redes de três camadas o conjunto de valores de neurônios da camada oculta foi {4, 16} combinado às taxas de aprendizado {0.9, 0.65, 0.3} usando o mesmo valor entre as camadas, agora para as redes de quatro camadas o conjunto de valores de neurônios da 1ª camada oculta foi {4, 16} combinado ao mesmo conjunto de valores de neurônios para a 2ª camada oculta combinado, ainda, às taxas de aprendizado {0.9, 0.3} (usando sempre o mesmo valor na primeira e última conexão de camadas – entrada/oculta_1 e oculta_2/saída).
